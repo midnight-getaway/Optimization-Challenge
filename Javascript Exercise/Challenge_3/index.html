@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Type text and see a live character count with a warning past 100 characters."
+    />
+    <title>Character Counter with Warning</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <p class="back"><a href="../index.html">← All challenges</a></p>
+    <main id="main" tabindex="-1">
+      <h1>Character Counter</h1>
+
+      <div class="form-group">
+        <label for="userText">Type your text</label>
+        <textarea
+          id="userText"
+          name="userText"
+          rows="5"
+          maxlength="120"
+          placeholder="Start typing..."
+          aria-describedby="charCount"
+        ></textarea>
+      </div>
+
+      <p id="charCount" class="char-count" role="status" aria-live="polite">
+        Characters typed: 0
+      </p>
+      <p id="warning" class="warning" role="alert" hidden></p>
+    </main>
+    <script src="script.js" defer></script>
+  </body>
+</html>
