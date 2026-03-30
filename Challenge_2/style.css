@@ -120,23 +120,6 @@ button:hover {
   font-family: ui-monospace, monospace;
 }
 
-.skip-link {
-  position: absolute;
-  left: -9999px;
-  z-index: 999;
-  padding: 0.65rem 1rem;
-  background: #333;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: 600;
-}
-
-.skip-link:focus {
-  left: 1rem;
-  top: 1rem;
-}
-
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
